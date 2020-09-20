@@ -5,7 +5,6 @@ import TodoList from "./components/TodoList";
 
 function App() {
   const[ todos, setTodos ] = useState([]);
-
   //to add the todo to the todos array we need another function
   function addTodo(todo){
     setTodos([todo, ...todos]);
