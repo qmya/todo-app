@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button, TextField } from "@material-ui/core";
 import { v4 as uuidv4 } from 'uuid';
-
 function TodoForm({ addTodo }) {
     const [ todo, setTodo ] = useState({
         id: "",
@@ -21,7 +20,6 @@ function TodoForm({ addTodo }) {
            //reset task input
            setTodo({ ...todo, task: "" });
         }
-
     }
   return (
     <div>
